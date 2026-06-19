@@ -1,40 +1,40 @@
-import { useEffect, useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, ArrowUpRight } from 'lucide-react'
-import company from '@/data/company.json'
-import Logo from './Logo'
+import { useEffect, useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Menu, X, ArrowUpRight } from 'lucide-react';
+import company from '@/data/company.json';
+import Logo from './Logo';
+import ServicesDropdown from './ServicesDropdown';
 
 const NAV_LINKS = [
-  { label: 'Services', href: '#services' },
   { label: 'Work', href: '#work' },
   { label: 'Process', href: '#process' },
   { label: 'About', href: '#about' },
   { label: 'Contact', href: '#contact' },
-]
+];
 
 export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false)
-  const [open, setOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 24)
-    onScroll()
-    window.addEventListener('scroll', onScroll, { passive: true })
-    return () => window.removeEventListener('scroll', onScroll)
-  }, [])
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
   useEffect(() => {
-    document.body.style.overflow = open ? 'hidden' : ''
+    document.body.style.overflow = open ? 'hidden' : '';
     return () => {
-      document.body.style.overflow = ''
-    }
-  }, [open])
+      document.body.style.overflow = '';
+    };
+  }, [open]);
 
   const handleNavClick = (href: string) => {
-    setOpen(false)
-    const el = document.querySelector(href)
-    if (el) el.scrollIntoView({ behavior: 'smooth' })
-  }
+    setOpen(false);
+    const el = document.querySelector(href);
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <>
@@ -53,8 +53,8 @@ export default function Navbar() {
           <a
             href="#top"
             onClick={(e) => {
-              e.preventDefault()
-              window.scrollTo({ top: 0, behavior: 'smooth' })
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
             className="flex items-center gap-2 font-display text-xl font-semibold tracking-tight text-ink hover:opacity-80 transition-opacity"
           >
@@ -63,6 +63,7 @@ export default function Navbar() {
           </a>
 
           <nav className="hidden items-center gap-9 lg:flex">
+            <ServicesDropdown />
             {NAV_LINKS.map((link) => (
               <button
                 key={link.href}
@@ -123,6 +124,13 @@ export default function Navbar() {
               </div>
 
               <nav className="mt-10 flex flex-col gap-1">
+                <button
+                  onClick={() => handleNavClick('#services')}
+                  className="border-b border-ink/8 py-4 text-left font-display text-2xl font-medium text-ink hover:text-signal-600 transition-colors"
+                >
+                  Services
+                </button>
+
                 {NAV_LINKS.map((link, i) => (
                   <motion.button
                     key={link.href}
@@ -130,7 +138,7 @@ export default function Navbar() {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.08 + i * 0.05 }}
                     onClick={() => handleNavClick(link.href)}
-                    className="border-b border-ink/8 py-4 text-left font-display text-2xl font-medium text-ink"
+                    className="border-b border-ink/8 py-4 text-left font-display text-2xl font-medium text-ink hover:text-signal-600 transition-colors"
                   >
                     {link.label}
                   </motion.button>
@@ -154,5 +162,5 @@ export default function Navbar() {
         )}
       </AnimatePresence>
     </>
-  )
+  );
 }

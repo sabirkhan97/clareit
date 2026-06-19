@@ -1,0 +1,66 @@
+[
+  {
+    "id": "frontend",
+    "title": "Frontend Engineering",
+    "description": "Performant, accessible interfaces using React, Next.js, and Vue — engineered for scale.",
+    "icon": "🎨",
+    "tags": ["React", "Next.js", "Vue"],
+    "href": "#services"
+  },
+  {
+    "id": "backend",
+    "title": "Backend & APIs",
+    "description": "Robust, observable systems with REST, GraphQL, and event-driven architectures.",
+    "icon": "⚙️",
+    "tags": ["Node.js", "Java", "Python"],
+    "href": "#services"
+  },
+  {
+    "id": "dotnet",
+    "title": ".NET Development",
+    "description": "Full-spectrum .NET engineering from legacy modernization to greenfield builds.",
+    "icon": "🛡️",
+    "tags": [".NET 8", "C#", "ASP.NET Core"],
+    "href": "#services"
+  },
+  {
+    "id": "cloud",
+    "title": "Cloud & DevOps",
+    "description": "Infrastructure as code on AWS, Azure, and GCP built for resilience and cost-efficiency.",
+    "icon": "☁️",
+    "tags": ["AWS", "Azure", "Docker"],
+    "href": "#services"
+  },
+  {
+    "id": "mobile",
+    "title": "Mobile Engineering",
+    "description": "iOS, Android, and cross-platform apps shipped to app stores with real performance budgets.",
+    "icon": "📱",
+    "tags": ["React Native", "Flutter", "Swift"],
+    "href": "#services"
+  },
+  {
+    "id": "ai",
+    "title": "Data & AI Integration",
+    "description": "From data pipelines to LLM-powered features without the science-project overhead.",
+    "icon": "🧠",
+    "tags": ["Python", "LangChain", "OpenAI API"],
+    "href": "#services"
+  },
+  {
+    "id": "design",
+    "title": "Product Design",
+    "description": "UX research, product strategy, and design systems that hand off cleanly into engineering.",
+    "icon": "✨",
+    "tags": ["Figma", "Design Systems", "Prototyping"],
+    "href": "#services"
+  },
+  {
+    "id": "qa",
+    "title": "QA & Test Automation",
+    "description": "End-to-end test automation and CI-integrated QA pipelines for confident releases.",
+    "icon": "✅",
+    "tags": ["Selenium", "Cypress", "Playwright"],
+    "href": "#services"
+  }
+]
