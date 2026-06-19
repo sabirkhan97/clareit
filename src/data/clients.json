@@ -1,0 +1,14 @@
+[
+  { "id": 1, "name": "Northbridge Capital", "industry": "Fintech", "logoText": "Northbridge" },
+  { "id": 2, "name": "Veltrix Health", "industry": "Healthcare", "logoText": "Veltrix" },
+  { "id": 3, "name": "Oremo Logistics", "industry": "Supply Chain", "logoText": "Oremo" },
+  { "id": 4, "name": "Solace Retail", "industry": "E-commerce", "logoText": "Solace" },
+  { "id": 5, "name": "Kindle & Co", "industry": "Real Estate", "logoText": "Kindle & Co" },
+  { "id": 6, "name": "Pivotal Energy", "industry": "CleanTech", "logoText": "Pivotal" },
+  { "id": 7, "name": "Marrow Studios", "industry": "Media", "logoText": "Marrow" },
+  { "id": 8, "name": "Hexa Robotics", "industry": "Manufacturing", "logoText": "Hexa" },
+  { "id": 9, "name": "Bluefield Insurance", "industry": "Insurance", "logoText": "Bluefield" },
+  { "id": 10, "name": "Tessel Education", "industry": "EdTech", "logoText": "Tessel" },
+  { "id": 11, "name": "Currant Foods", "industry": "Consumer Goods", "logoText": "Currant" },
+  { "id": 12, "name": "Anchorline Bank", "industry": "Banking", "logoText": "Anchorline" }
+]

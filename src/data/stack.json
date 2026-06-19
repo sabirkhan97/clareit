@@ -1,0 +1,22 @@
+[
+  { "name": "React", "category": "Frontend" },
+  { "name": "Next.js", "category": "Frontend" },
+  { "name": "Vue", "category": "Frontend" },
+  { "name": "TypeScript", "category": "Language" },
+  { "name": ".NET 8", "category": "Backend" },
+  { "name": "C#", "category": "Language" },
+  { "name": "Node.js", "category": "Backend" },
+  { "name": "Python", "category": "Backend" },
+  { "name": "Java", "category": "Backend" },
+  { "name": "GraphQL", "category": "API" },
+  { "name": "PostgreSQL", "category": "Database" },
+  { "name": "MongoDB", "category": "Database" },
+  { "name": "AWS", "category": "Cloud" },
+  { "name": "Azure", "category": "Cloud" },
+  { "name": "Docker", "category": "DevOps" },
+  { "name": "Kubernetes", "category": "DevOps" },
+  { "name": "Terraform", "category": "DevOps" },
+  { "name": "React Native", "category": "Mobile" },
+  { "name": "Flutter", "category": "Mobile" },
+  { "name": "LangChain", "category": "AI" }
+]

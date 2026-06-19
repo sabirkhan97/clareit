@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "quote": "Clareit didn't just write code — they rebuilt how our engineering team thinks about shipping. Our release cycle went from monthly to weekly within a quarter.",
+    "name": "Priya Nandakumar",
+    "role": "VP Engineering",
+    "company": "Northbridge Capital"
+  },
+  {
+    "id": 2,
+    "quote": "We came to them with a six-week timeline everyone said was impossible. They hit it, and the system hasn't gone down once since launch.",
+    "name": "Daniel Osei",
+    "role": "CTO",
+    "company": "Veltrix Health"
+  },
+  {
+    "id": 3,
+    "quote": "What stood out wasn't just the engineering quality — it was how much they pushed back on bad ideas before we wasted budget on them.",
+    "name": "Mariana Costa",
+    "role": "Head of Product",
+    "company": "Solace Retail"
+  },
+  {
+    "id": 4,
+    "quote": "Azeem's team treated our legacy .NET system like it mattered, not like a problem to route around. That respect showed in the final architecture.",
+    "name": "Ravi Subramaniam",
+    "role": "Director of IT",
+    "company": "Oremo Logistics"
+  }
+]

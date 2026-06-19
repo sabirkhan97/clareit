@@ -1,0 +1,75 @@
+{
+  "brand": {
+    "name": "Clareit",
+    "tagline": "Engineering, made clear.",
+    "founded": 2018,
+    "founder": {
+      "name": "Azeem Khan",
+      "role": "Founder & CEO"
+    }
+  },
+  "contact": {
+    "email": "hello@clareit.com",
+    "phone": "+91 98765 43210",
+    "address": "Arjun Nagar, Sector 8, Gurugram, Haryana 122001, India",
+    "mapsUrl": "https://www.google.com/maps/place/Arjun+Nagar,+Sector+8,+Gurugram,+Haryana+122001/@28.4642647,77.0166853,17z/data=!4m6!3m5!1s0x390d182e61de1181:0xc95f2b24f8fdea36!8m2!3d28.4588498!4d77.0197426!16s%2Fg%2F1td79jrb",
+    "embedUrl": "https://www.google.com/maps?q=Arjun+Nagar,+Sector+8,+Gurugram,+Haryana+122001&output=embed",
+    "lat": 28.4588498,
+    "lng": 77.0197426
+  },
+  "social": {
+    "linkedin": "https://linkedin.com/company/clareit",
+    "twitter": "https://twitter.com/clareit",
+    "github": "https://github.com/clareit",
+    "instagram": "https://instagram.com/clareit"
+  },
+  "stats": [
+    { "value": "120+", "label": "Projects shipped" },
+    { "value": "45+", "label": "Active clients" },
+    { "value": "8", "label": "Years in business" },
+    { "value": "98%", "label": "Client retention" }
+  ],
+  "description": "ClareIT is a modern technology and digital transformation company focused on helping businesses build, scale, and optimize digital products, enterprise applications, and intelligent business solutions. The company specializes in custom software development, web and mobile application development, cloud engineering, DevOps automation, artificial intelligence, business process automation, enterprise system integration, and technology consulting.",
+  "partnerships": "ClareIT partners with startups, growing businesses, and enterprises to transform ideas into scalable digital products and solve complex business challenges through innovative technology solutions. The company delivers end-to-end services across the software development lifecycle, including product strategy, business analysis, solution architecture, UI/UX design, frontend and backend development, API integration, cloud infrastructure management, quality assurance, deployment, maintenance, and continuous support.",
+  "solutions": "The company develops SaaS platforms, enterprise applications, customer portals, e-commerce systems, workflow automation platforms, analytics dashboards, AI-powered tools, and industry-specific digital solutions. ClareIT also assists organizations in cloud adoption, legacy system modernization, infrastructure optimization, performance enhancement, and digital transformation initiatives to improve efficiency, scalability, and business growth.",
+  "consulting": "In addition to technology implementation, ClareIT provides IT consulting and strategic advisory services to help organizations define technology roadmaps, improve software architecture, streamline operations, and adopt emerging technologies. The company leverages modern technology stacks, cloud-native architectures, artificial intelligence, machine learning, automation, and data-driven solutions to create measurable business value.",
+  "markets": "ClareIT serves organizations across multiple industries, including healthcare, finance, retail, e-commerce, logistics, education, manufacturing, professional services, and other technology-driven sectors. The company's mission is to empower businesses through innovation, automation, and scalable digital solutions that enhance customer experience, operational efficiency, and long-term growth.",
+  "lineOfBusiness": "Information Technology Services, Software Development, Digital Transformation, Artificial Intelligence Solutions, Cloud Services, Enterprise Technology Solutions, IT Consulting, DevOps Engineering, Automation Solutions, and SaaS Product Development.",
+  "businessDomain": "Technology Solutions and Digital Transformation Company",
+  "industry": "Information Technology and Software Services",
+  "businessModel": [
+    "B2B Technology Services",
+    "Product Engineering",
+    "Software Consulting",
+    "Managed Services",
+    "Digital Transformation",
+    "Technology Advisory Services"
+  ],
+  "coreOfferings": [
+    "Custom Software Development",
+    "Web Application Development",
+    "Mobile Application Development",
+    "SaaS Product Development",
+    "Enterprise Software Solutions",
+    "Artificial Intelligence Solutions",
+    "Machine Learning Applications",
+    "Cloud Engineering and Migration",
+    "DevOps and Infrastructure Automation",
+    "Business Process Automation",
+    "Data Analytics and Reporting",
+    "API Development and Integration",
+    "System Modernization",
+    "IT Consulting and Advisory",
+    "Quality Assurance and Testing",
+    "Application Maintenance and Support"
+  ],
+  "targetCustomers": [
+    "Startups",
+    "Small and Medium Businesses (SMEs)",
+    "Enterprises",
+    "Technology Companies",
+    "Digital-First Organizations",
+    "Government Agencies",
+    "Businesses undergoing digital transformation"
+  ]
+}

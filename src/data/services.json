@@ -1,0 +1,74 @@
+[
+  {
+    "id": "frontend-engineering",
+    "index": "01",
+    "title": "Frontend Engineering",
+    "short": "Interfaces that feel inevitable.",
+    "description": "We build performant, accessible, pixel-precise interfaces using React, Next.js, and Vue — engineered for scale, not just shipped for demo day.",
+    "stack": ["React", "Next.js", "Vue", "TypeScript", "Tailwind CSS", "Redux"],
+    "icon": "layout-template"
+  },
+  {
+    "id": "backend-engineering",
+    "index": "02",
+    "title": "Backend & APIs",
+    "short": "Systems that don't fall over.",
+    "description": "Robust, observable backend systems and APIs — REST, GraphQL, and event-driven architectures built to handle real production traffic.",
+    "stack": ["Node.js", "Java", "Python", "GraphQL", "Microservices", "Kafka"],
+    "icon": "server"
+  },
+  {
+    "id": "dotnet-development",
+    "index": "03",
+    "title": ".NET Development",
+    "short": "Enterprise-grade, by default.",
+    "description": "Full-spectrum .NET engineering — from legacy modernization to greenfield builds on .NET 8, C#, and Azure-native services.",
+    "stack": [".NET 8", "C#", "ASP.NET Core", "Entity Framework", "Azure", "Blazor"],
+    "icon": "boxes"
+  },
+  {
+    "id": "cloud-devops",
+    "index": "04",
+    "title": "Cloud & DevOps",
+    "short": "Infrastructure that scales quietly.",
+    "description": "CI/CD pipelines, infrastructure as code, and cloud architecture on AWS, Azure, and GCP — built for resilience and cost-efficiency.",
+    "stack": ["AWS", "Azure", "Docker", "Kubernetes", "Terraform", "GitHub Actions"],
+    "icon": "cloud-cog"
+  },
+  {
+    "id": "mobile-engineering",
+    "index": "05",
+    "title": "Mobile Engineering",
+    "short": "Native feel, cross-platform speed.",
+    "description": "iOS, Android, and cross-platform apps built with React Native and Flutter — shipped to app stores with real performance budgets.",
+    "stack": ["React Native", "Flutter", "Swift", "Kotlin", "Expo"],
+    "icon": "smartphone"
+  },
+  {
+    "id": "data-ai",
+    "index": "06",
+    "title": "Data & AI Integration",
+    "short": "Make your product think.",
+    "description": "From data pipelines to LLM-powered features — we integrate AI capabilities into existing products without the science-project overhead.",
+    "stack": ["Python", "LangChain", "OpenAI API", "PostgreSQL", "Vector DBs", "ETL"],
+    "icon": "brain-circuit"
+  },
+  {
+    "id": "product-design",
+    "index": "07",
+    "title": "Product Design",
+    "short": "Design that ships, not just impresses.",
+    "description": "UX research, product strategy, and high-fidelity design systems that hand off cleanly into engineering — no translation loss.",
+    "stack": ["Figma", "Design Systems", "Prototyping", "User Research"],
+    "icon": "pen-tool"
+  },
+  {
+    "id": "qa-automation",
+    "index": "08",
+    "title": "QA & Test Automation",
+    "short": "Confidence before every release.",
+    "description": "End-to-end test automation, performance testing, and CI-integrated QA pipelines so releases stop being a leap of faith.",
+    "stack": ["Selenium", "Cypress", "Playwright", "JMeter", "Jest"],
+    "icon": "shield-check"
+  }
+]

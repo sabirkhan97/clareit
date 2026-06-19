@@ -1,0 +1,62 @@
+[
+  {
+    "id": "northbridge-trading-platform",
+    "client": "Northbridge Capital",
+    "title": "Real-time trading dashboard rebuilt for scale",
+    "category": "Frontend · React · .NET",
+    "year": "2025",
+    "metric": { "value": "180ms", "label": "avg. render latency, down from 1.4s" },
+    "summary": "Re-architected a legacy trading dashboard into a React + .NET system handling 40,000 live ticks per second without dropping a frame.",
+    "tags": ["React", ".NET 8", "SignalR", "Fintech"]
+  },
+  {
+    "id": "veltrix-patient-portal",
+    "client": "Veltrix Health",
+    "title": "HIPAA-compliant patient portal, from zero to launch",
+    "category": "Full-stack · Cloud",
+    "year": "2025",
+    "metric": { "value": "6 weeks", "label": "from kickoff to first patient login" },
+    "summary": "Designed and shipped a full patient intake and records portal on Azure, with end-to-end encryption and audit-grade logging.",
+    "tags": ["Node.js", "Azure", "React", "Healthcare"]
+  },
+  {
+    "id": "oremo-logistics-ops",
+    "client": "Oremo Logistics",
+    "title": "Fleet operations platform across 14 countries",
+    "category": "Backend · DevOps",
+    "year": "2024",
+    "metric": { "value": "31%", "label": "reduction in dispatch delays" },
+    "summary": "Built a microservices backend coordinating real-time fleet data across 14 country operations, deployed on Kubernetes with zero-downtime releases.",
+    "tags": ["Java", "Kubernetes", "Kafka", "Logistics"]
+  },
+  {
+    "id": "solace-commerce-replatform",
+    "client": "Solace Retail",
+    "title": "Headless commerce replatform for peak-season scale",
+    "category": "Frontend · Cloud",
+    "year": "2024",
+    "metric": { "value": "4.2x", "label": "checkout throughput during peak sale" },
+    "summary": "Migrated a monolithic storefront to a headless Next.js architecture that survived Black Friday traffic without a single autoscale failure.",
+    "tags": ["Next.js", "AWS", "GraphQL", "E-commerce"]
+  },
+  {
+    "id": "pivotal-energy-grid-ai",
+    "client": "Pivotal Energy",
+    "title": "AI-assisted load forecasting for grid operators",
+    "category": "Data & AI",
+    "year": "2026",
+    "metric": { "value": "19%", "label": "improvement in forecast accuracy" },
+    "summary": "Integrated an LLM-assisted forecasting layer into existing SCADA tooling, giving operators plain-language grid insights in real time.",
+    "tags": ["Python", "LangChain", "Data Pipelines", "CleanTech"]
+  },
+  {
+    "id": "hexa-robotics-control",
+    "client": "Hexa Robotics",
+    "title": "Mobile control suite for industrial robotics fleets",
+    "category": "Mobile · IoT",
+    "year": "2024",
+    "metric": { "value": "60fps", "label": "live telemetry on factory floor tablets" },
+    "summary": "Built a React Native control suite letting floor technicians monitor and re-task robotics fleets with real-time telemetry overlays.",
+    "tags": ["React Native", "MQTT", "IoT", "Manufacturing"]
+  }
+]
