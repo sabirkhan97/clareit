@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { ArrowUpRight } from 'lucide-react'
 import SectionHeading from './ui/SectionHeading'
 import Reveal from './ui/Reveal'
+import Logo from './Logo'
 import projects from '@/data/projects.json'
 
 export default function Work() {
@@ -11,6 +12,12 @@ export default function Work() {
   return (
     <section id="work" className="section-py bg-paper-dim">
       <div className="container-px mx-auto max-w-7xl">
+        <Reveal>
+          <div className="flex items-center gap-3 mb-4">
+            <Logo width={40} height={40} />
+            <span className="font-display text-sm font-medium uppercase tracking-wider text-signal-600">Selected work</span>
+          </div>
+        </Reveal>
         <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-end">
           <SectionHeading
             eyebrow="Selected work"

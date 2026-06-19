@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import Logo from './Logo'
 
 export default function PageLoader() {
   const [loading, setLoading] = useState(true)
@@ -23,33 +24,23 @@ export default function PageLoader() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
-            className="flex items-center gap-3"
+            className="flex flex-col items-center gap-4"
           >
-            <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-paper">
-              <motion.svg
-                width="22"
-                height="22"
-                viewBox="0 0 24 24"
-                fill="none"
-                initial={{ pathLength: 0 }}
-                animate={{ pathLength: 1 }}
-                transition={{ duration: 0.8, ease: 'easeInOut' }}
-              >
-                <motion.path
-                  d="M16 6 L8 12 L16 18"
-                  stroke="#4F46E5"
-                  strokeWidth="2.4"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  initial={{ pathLength: 0 }}
-                  animate={{ pathLength: 1 }}
-                  transition={{ duration: 0.6, ease: 'easeInOut' }}
-                />
-              </motion.svg>
-            </span>
-            <span className="font-display text-2xl font-semibold text-paper">
-              Clareit
-            </span>
+            <motion.div
+              initial={{ scale: 0, rotate: -180 }}
+              animate={{ scale: 1, rotate: 0 }}
+              transition={{ duration: 0.6, ease: 'easeOut' }}
+            >
+              <Logo width={56} height={56} />
+            </motion.div>
+            <motion.span
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.3, duration: 0.4 }}
+              className="font-display text-xl font-semibold text-paper"
+            >
+              ClareIT
+            </motion.span>
           </motion.div>
         </motion.div>
       )}

@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import SectionHeading from './ui/SectionHeading'
 import Reveal from './ui/Reveal'
+import Logo from './Logo'
 
 const STEPS = [
   {
@@ -29,6 +30,12 @@ export default function Process() {
   return (
     <section id="process" className="section-py bg-paper overflow-hidden">
       <div className="container-px mx-auto max-w-7xl">
+        <Reveal>
+          <div className="flex items-center gap-3 mb-4">
+            <Logo width={40} height={40} />
+            <span className="font-display text-sm font-medium uppercase tracking-wider text-signal-600">How we work</span>
+          </div>
+        </Reveal>
         <SectionHeading
           eyebrow="How we work"
           title={

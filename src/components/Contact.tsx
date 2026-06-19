@@ -4,6 +4,7 @@ import { Mail, Phone, MapPin, ArrowUpRight, Send, Check } from 'lucide-react'
 import SectionHeading from './ui/SectionHeading'
 import Reveal from './ui/Reveal'
 import Magnetic from './ui/Magnetic'
+import Logo from './Logo'
 import company from '@/data/company.json'
 
 export default function Contact() {
@@ -19,6 +20,12 @@ export default function Contact() {
   return (
     <section id="contact" className="section-py bg-paper-dim">
       <div className="container-px mx-auto max-w-7xl">
+        <Reveal>
+          <div className="flex items-center gap-3 mb-4">
+            <Logo width={40} height={40} />
+            <span className="font-display text-sm font-medium uppercase tracking-wider text-signal-600">Get in touch</span>
+          </div>
+        </Reveal>
         <SectionHeading
           eyebrow="Get in touch"
           title={

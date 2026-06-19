@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { Quote } from 'lucide-react'
 import Reveal from './ui/Reveal'
 import SectionHeading from './ui/SectionHeading'
+import Logo from './Logo'
 import company from '@/data/company.json'
 
 export default function About() {
@@ -10,6 +11,12 @@ export default function About() {
       <div className="container-px mx-auto max-w-7xl">
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-12 lg:gap-10">
           <div className="lg:col-span-5">
+            <Reveal>
+              <div className="flex items-center gap-3 mb-6">
+                <Logo width={40} height={40} />
+                <span className="font-display text-sm font-medium uppercase tracking-wider text-signal-600">About {company.brand.name}</span>
+              </div>
+            </Reveal>
             <SectionHeading
               eyebrow="About Clareit"
               title="Built by engineers who got tired of bad consultancies."

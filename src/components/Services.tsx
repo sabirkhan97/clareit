@@ -12,7 +12,9 @@ import {
 } from 'lucide-react'
 import { motion } from 'framer-motion'
 import SectionHeading from './ui/SectionHeading'
+import Reveal from './ui/Reveal'
 import { StaggerGroup, StaggerItem } from './ui/Stagger'
+import Logo from './Logo'
 import services from '@/data/services.json'
 
 const ICONS: Record<string, LucideIcon> = {
@@ -30,6 +32,12 @@ export default function Services() {
   return (
     <section id="services" className="section-py bg-paper">
       <div className="container-px mx-auto max-w-7xl">
+        <Reveal>
+          <div className="flex items-center gap-3 mb-4">
+            <Logo width={40} height={40} />
+            <span className="font-display text-sm font-medium uppercase tracking-wider text-signal-600">What we do</span>
+          </div>
+        </Reveal>
         <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-end">
           <SectionHeading
             eyebrow="What we do"

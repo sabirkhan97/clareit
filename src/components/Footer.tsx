@@ -1,5 +1,6 @@
 import { Linkedin, Twitter, Github, Instagram, ArrowUpRight } from 'lucide-react'
 import company from '@/data/company.json'
+import Logo from './Logo'
 
 const FOOTER_LINKS = {
   Company: [
@@ -38,12 +39,10 @@ export default function Footer() {
       <div className="container-px mx-auto max-w-7xl">
         <div className="grid grid-cols-2 gap-10 pb-16 md:grid-cols-6">
           <div className="col-span-2">
-            <a href="#top" className="flex items-center gap-2 font-display text-xl font-semibold text-paper">
-              <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-paper text-ink">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                  <path d="M16 6 L8 12 L16 18" stroke="#4F46E5" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </span>
+            <a href="#top" className="flex items-center gap-2 font-display text-xl font-semibold text-paper hover:opacity-80 transition-opacity">
+              <div className="flex h-8 w-8 items-center justify-center">
+                <Logo width={32} height={32} />
+              </div>
               {company.brand.name}
             </a>
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-ink-300">

@@ -1,5 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="8" fill="#11151C"/>
-  <path d="M10 11 L21 11 L21 14 L13 14 L13 18 L19 18 L19 21 L13 21 L13 25 L21 25 L21 28 L10 28 Z" fill="none"/>
-  <path d="M21 8 L9 16 L21 24" stroke="#4F46E5" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4FA3C1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1B5E7A;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer C circle -->
+  <circle cx="100" cy="100" r="85" fill="none" stroke="url(#blueGradient)" stroke-width="28" stroke-dasharray="267" stroke-dashoffset="80"/>
+  
+  <!-- Code brackets < in light blue -->
+  <g transform="translate(70, 75)">
+    <polyline points="15,0 0,15 15,30" fill="none" stroke="#5FB3D5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  
+  <!-- Code brackets > in light blue -->
+  <g transform="translate(110, 75)">
+    <polyline points="0,0 15,15 0,30" fill="none" stroke="#5FB3D5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  
+  <!-- Orange slash / -->
+  <line x1="92" y1="60" x2="108" y2="140" stroke="#FF9500" stroke-width="6" stroke-linecap="round"/>
 </svg>

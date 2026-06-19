@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, ArrowUpRight } from 'lucide-react'
 import company from '@/data/company.json'
+import Logo from './Logo'
 
 const NAV_LINKS = [
   { label: 'Services', href: '#services' },
@@ -55,13 +56,9 @@ export default function Navbar() {
               e.preventDefault()
               window.scrollTo({ top: 0, behavior: 'smooth' })
             }}
-            className="flex items-center gap-2 font-display text-xl font-semibold tracking-tight text-ink"
+            className="flex items-center gap-2 font-display text-xl font-semibold tracking-tight text-ink hover:opacity-80 transition-opacity"
           >
-            <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-ink text-paper">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                <path d="M16 6 L8 12 L16 18" stroke="#4F46E5" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </span>
+            <Logo width={32} height={32} />
             {company.brand.name}
           </a>
 
