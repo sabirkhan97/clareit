@@ -1,0 +1,15 @@
+# ClareIT Robots.txt
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /*.json$
+
+# Crawl delay
+Crawl-delay: 1
+
+# Sitemap
+Sitemap: https://clareit.com/sitemap.xml
+
+# Google Search Console
+User-agent: Googlebot
+Allow: /
