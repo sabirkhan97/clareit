@@ -9,7 +9,10 @@
     }
   },
   "contact": {
-    "email": "hello@clareit.com",
+    "email": "info@clareit.com",
+    "emailInfo": "info@clareit.com",
+    "emailHR": "hr@clareit.com",
+    "emailEnquiry": "enquiry@clareit.com",
     "phone": "+91 98765 43210",
     "address": "Shakti Nagar, Model Town, Sector 11, Gurugram, Haryana 122001, India",
     "mapsUrl": "https://www.google.com/maps/place/Shakti+Nagar,+Model+Town,+Sector+11,+Gurugram,+Haryana+122001/@28.4552976,77.0166308,17z/data=!3m1!4b1!4m6!3m5!1s0x390d182f45ffd4b7:0x1b3d1555419290b2!8m2!3d28.4545598!4d77.0165011!16s%2Fg%2F1thkvncg!18m1!1e1?entry=ttu&g_ep=EgoyMDI2MDYxNi4wIKXMDSoASAFQAw%3D%3D",
