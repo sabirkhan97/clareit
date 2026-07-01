@@ -9,12 +9,43 @@ import company from '@/data/company.json'
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false)
+  const [submitting, setSubmitting] = useState(false)
+  const [error, setError] = useState<string | null>(null)
   const [form, setForm] = useState({ name: '', email: '', budget: '', message: '' })
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    // Static demo — wire this up to your backend / form service of choice.
-    setSubmitted(true)
+    setSubmitting(true)
+    setError(null)
+
+    try {
+      const response = await fetch('/.netlify/functions/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          budget: form.budget,
+          message: form.message,
+        }),
+      })
+
+      if (!response.ok) {
+        const body = await response.json().catch(() => null)
+        throw new Error(body?.error || 'Failed to send message')
+      }
+
+      setSubmitted(true)
+    } catch (err) {
+      setError(
+        (err as Error).message ||
+          'Sorry, something went wrong while sending your message. Please try again or email azeem@clareit.com directly.'
+      )
+    } finally {
+      setSubmitting(false)
+    }
   }
 
   return (
@@ -54,8 +85,8 @@ export default function Contact() {
                     Message sent.
                   </h3>
                   <p className="mt-2 max-w-sm text-sm text-ink-500">
-                    Thanks, {form.name.split(' ')[0] || 'there'}. Someone from the team
-                    will reply to {form.email || 'your inbox'} within one business day.
+                    Thanks, {form.name.split(' ')[0] || 'there'}. Your message is on its way to azeem@clareit.com.
+                    We'll reply within one business day.
                   </p>
                   <button
                     onClick={() => {
@@ -135,13 +166,22 @@ export default function Contact() {
                   </div>
 
                   <Magnetic strength={0.15} className="self-start">
-                    <button type="submit" className="btn-primary">
-                      Send message
+                    <button
+                      type="submit"
+                      disabled={submitting}
+                      className={`btn-primary ${submitting ? 'opacity-70 pointer-events-none' : ''}`}
+                    >
+                      {submitting ? 'Sending...' : 'Send message'}
                       <Send size={15} />
                     </button>
                   </Magnetic>
                 </form>
               )}
+              {error ? (
+                <div className="mt-6 rounded-2xl border border-red-200 bg-red-50 px-5 py-4 text-sm text-red-700">
+                  {error}
+                </div>
+              ) : null}
             </div>
           </Reveal>
 

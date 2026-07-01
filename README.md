@@ -102,6 +102,15 @@ code to change copy, add a client logo, add a project, or update the address/pho
 - The contact form in `Contact.tsx` is a **static demo** — it shows a success state on
   submit but doesn't send anywhere yet. Wire the `handleSubmit` function up to your
   backend, a form service (Formspree, Resend, etc.), or an API route.
+- The `api/contact.ts` serverless function is included and can be deployed on Vercel.
+  Configure the following environment variables for SMTP email delivery:
+  - `SMTP_HOST`
+  - `SMTP_PORT`
+  - `SMTP_SECURE` (`true` or `false`)
+  - `SMTP_USER`
+  - `SMTP_PASS`
+  - `SMTP_FROM` (optional)
+  - `EMAIL_TO` (optional, defaults to `azeem@clareit.com`)
 - The Google Map in `Contact.tsx` uses a public, keyless embed URL
   (`company.contact.embedUrl`). For a richer embed (custom pin styling, etc.) swap in
   the Google Maps JavaScript API with your own API key.
