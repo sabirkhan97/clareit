@@ -68,87 +68,55 @@ const handler: Handler = async (event) => {
   })
 
   const text = `Name: ${name}\nEmail: ${email}\nBudget: ${budget || 'Not specified'}\n\nMessage:\n${message}`
-const html = `
+  const html = `
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8" />
-</head>
-<body style="margin:0;padding:32px;background:#f5f7fb;font-family:Arial,Helvetica,sans-serif;">
-  <table width="100%" cellpadding="0" cellspacing="0">
-    <tr>
-      <td align="center">
-        <table width="620" cellpadding="0" cellspacing="0" style="background:#ffffff;border-radius:14px;overflow:hidden;border:1px solid #e5e7eb;">
-          
-          <tr>
-            <td style="background:#111827;padding:24px;">
-              <h2 style="margin:0;color:#ffffff;font-size:24px;">
-                📩 New Contact Request
-              </h2>
-              <p style="margin:8px 0 0;color:#cbd5e1;font-size:14px;">
-                Someone submitted the contact form on ClareIT.
-              </p>
-            </td>
-          </tr>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New ClareIT Contact Request</title>
+  </head>
+  <body style="margin:0;padding:32px;background:#F6F4EF;font-family:Inter, Arial, Helvetica, sans-serif;color:#11151C;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:680px;margin:0 auto;border-collapse:collapse;">
+      <tr>
+        <td>
+          <div style="background:linear-gradient(135deg, #11151C 0%, #1F2630 100%);border-radius:20px;padding:32px 32px 24px;box-shadow:0 12px 30px rgba(17,21,28,0.12);">
+            <div style="font-size:12px;letter-spacing:0.2em;text-transform:uppercase;color:#A8A0F5;font-weight:700;margin-bottom:10px;">ClareIT</div>
+            <h1 style="margin:0;color:#FFFFFF;font-size:28px;line-height:1.2;font-family:Georgia, 'Times New Roman', serif;">New contact request</h1>
+            <p style="margin:10px 0 0;color:#E5E7EB;font-size:15px;line-height:1.65;">Someone just submitted your contact form and wants to start a conversation.</p>
+          </div>
 
-          <tr>
-            <td style="padding:30px;">
+          <div style="background:#FFFFFF;border:1px solid #DEDAD0;border-radius:18px;margin-top:18px;padding:28px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
+              <tr>
+                <td style="padding:10px 0;border-bottom:1px solid #F1EFE9;width:120px;font-weight:700;color:#11151C;">Name</td>
+                <td style="padding:10px 0;border-bottom:1px solid #F1EFE9;color:#475063;">${name}</td>
+              </tr>
+              <tr>
+                <td style="padding:10px 0;border-bottom:1px solid #F1EFE9;width:120px;font-weight:700;color:#11151C;">Email</td>
+                <td style="padding:10px 0;border-bottom:1px solid #F1EFE9;color:#475063;"><a href="mailto:${email}" style="color:#4F46E5;text-decoration:none;">${email}</a></td>
+              </tr>
+              <tr>
+                <td style="padding:10px 0;border-bottom:1px solid #F1EFE9;width:120px;font-weight:700;color:#11151C;">Budget</td>
+                <td style="padding:10px 0;border-bottom:1px solid #F1EFE9;color:#475063;">${budget || 'Not specified'}</td>
+              </tr>
+            </table>
 
-              <table width="100%" cellpadding="10" cellspacing="0" style="border-collapse:collapse;">
-                <tr>
-                  <td style="font-weight:bold;color:#374151;width:150px;">👤 Name</td>
-                  <td style="color:#111827;">${name}</td>
-                </tr>
-
-                <tr style="background:#f9fafb;">
-                  <td style="font-weight:bold;color:#374151;">📧 Email</td>
-                  <td>
-                    <a href="mailto:${email}" style="color:#2563eb;text-decoration:none;">
-                      ${email}
-                    </a>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td style="font-weight:bold;color:#374151;">💰 Budget</td>
-                  <td>${budget || "Not specified"}</td>
-                </tr>
-              </table>
-
-              <div style="margin-top:30px;">
-                <h3 style="margin:0 0 12px;color:#111827;">
-                  Project Details
-                </h3>
-
-                <div style="
-                  background:#f9fafb;
-                  border-left:4px solid #2563eb;
-                  padding:18px;
-                  border-radius:8px;
-                  color:#374151;
-                  line-height:1.7;
-                ">
-                  ${(message || "").replace(/\n/g, "<br/>")}
-                </div>
+            <div style="margin-top:24px;">
+              <div style="font-weight:700;color:#11151C;margin-bottom:8px;">Project details</div>
+              <div style="background:#F9F7F2;border-left:4px solid #E8743B;padding:16px 18px;border-radius:10px;color:#475063;line-height:1.7;">
+                ${(message || '').replace(/\n/g, '<br/>')}
               </div>
+            </div>
+          </div>
 
-            </td>
-          </tr>
-
-          <tr>
-            <td style="padding:20px;background:#f9fafb;border-top:1px solid #e5e7eb;text-align:center;">
-              <p style="margin:0;color:#6b7280;font-size:13px;">
-                This email was automatically generated from the
-                <strong>ClareIT</strong> contact form.
-              </p>
-            </td>
-          </tr>
-
-        </table>
-      </td>
-    </tr>
-  </table>
-</body>
+          <div style="text-align:center;padding:20px 12px 0;color:#6B7488;font-size:13px;line-height:1.6;">
+            This email was automatically generated from the ClareIT contact form.
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
 </html>
 `;
   try {
