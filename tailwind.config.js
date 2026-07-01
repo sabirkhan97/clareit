@@ -1,22 +1,23 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: 'class',
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       colors: {
         // Base — warm paper, not pure white
-        paper: '#F6F4EF',
-        'paper-dim': '#EFECE4',
+        paper: 'rgb(var(--color-paper) / <alpha-value>)',
+        'paper-dim': 'rgb(var(--color-paper-dim) / <alpha-value>)',
         // Ink — deep navy-charcoal, not pure black
         ink: {
-          DEFAULT: '#11151C',
-          900: '#0D1117',
-          800: '#161B24',
-          700: '#1F2630',
-          600: '#2B3340',
-          500: '#475063',
-          400: '#6B7488',
-          300: '#9AA2B1',
+          DEFAULT: 'rgb(var(--color-ink) / <alpha-value>)',
+          900: 'rgb(var(--color-ink-900) / <alpha-value>)',
+          800: 'rgb(var(--color-ink-800) / <alpha-value>)',
+          700: 'rgb(var(--color-ink-700) / <alpha-value>)',
+          600: 'rgb(var(--color-ink-600) / <alpha-value>)',
+          500: 'rgb(var(--color-ink-500) / <alpha-value>)',
+          400: 'rgb(var(--color-ink-400) / <alpha-value>)',
+          300: 'rgb(var(--color-ink-300) / <alpha-value>)',
         },
         // Signature accent — electric indigo
         signal: {
@@ -36,7 +37,7 @@ export default {
           500: '#E8743B',
           600: '#C95A26',
         },
-        line: '#DEDAD0',
+        line: 'rgb(var(--color-line) / <alpha-value>)',
       },
       fontFamily: {
         display: ['"Space Grotesk"', 'system-ui', 'sans-serif'],

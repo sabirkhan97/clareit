@@ -1,3 +1,31 @@
+:root {
+  --color-paper: 246 244 239;
+  --color-paper-dim: 239 236 228;
+  --color-ink: 17 21 28;
+  --color-ink-900: 13 17 23;
+  --color-ink-800: 22 27 36;
+  --color-ink-700: 31 38 48;
+  --color-ink-600: 43 51 64;
+  --color-ink-500: 71 80 99;
+  --color-ink-400: 107 116 136;
+  --color-ink-300: 154 162 177;
+  --color-line: 222 218 208;
+}
+
+.dark {
+  --color-paper: 15 18 23;
+  --color-paper-dim: 23 28 36;
+  --color-ink: 246 244 239;
+  --color-ink-900: 255 255 255;
+  --color-ink-800: 242 242 242;
+  --color-ink-700: 234 234 234;
+  --color-ink-600: 224 224 224;
+  --color-ink-500: 214 214 214;
+  --color-ink-400: 193 195 204;
+  --color-ink-300: 176 181 194;
+  --color-line: 60 67 80;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -82,8 +110,8 @@
     mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
   }
   .bg-grid {
-    background-image: linear-gradient(to right, rgba(17,21,28,0.05) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(17,21,28,0.05) 1px, transparent 1px);
+    background-image: linear-gradient(to right, rgb(var(--color-ink) / 0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(var(--color-ink) / 0.06) 1px, transparent 1px);
     background-size: 48px 48px;
   }
 }
